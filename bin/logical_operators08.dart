@@ -9,4 +9,13 @@ Create a function argument  called a, b of type int
         bool: answer
 */
 
-void main() {}
+bool func(int a, int b) {
+  if (a % 2 == 0 && b % 2 == 1) {
+    return true;
+  }
+  return false;
+}
+
+void main() {
+  print(func(4, 5));
+}
