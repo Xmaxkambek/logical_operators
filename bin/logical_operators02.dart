@@ -8,4 +8,15 @@ Given two integers a, b,  check the following statement "Each of the numbers 'a'
     Returns:
         bool: answer
 */
-void main() {}
+
+bool func(int a, int b) {
+  if (a > 0 && 0 < b || a < 0 && 0 > b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+void main() {
+  print(func(-5, 7));
+}
