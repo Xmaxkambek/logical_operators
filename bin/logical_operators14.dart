@@ -9,14 +9,12 @@ Given a two-digit integer a,  check the following statement "All digits sum is o
 */
 
 bool func(int a) {
-  if (a > 9 && a < 100) {
-    if ((a % 10 + a ~/ 10) % 2 == 1) {
-      return true;
-    }
+  if (a > 9 && a < 100 && (a % 10 + a ~/ 10) % 2 == 1) {
+    return true;
   }
   return false;
 }
 
 void main() {
-  print(func(60));
+  print(func(70));
 }
